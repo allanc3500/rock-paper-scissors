@@ -13,6 +13,7 @@ function getComputerChoice(){
 
 function getHumanChoice(){
     let response = prompt("Pick Rock, Paper, or Scissors:");
+    response = response.toLowerCase();
     while(response.toLowerCase() != "rock" && response.toLowerCase() != "paper" && response.toLowerCase() != "scissors"){
         alert("Choice invalid! Pick either Rock, Paper, or Scissors.");
         response = prompt("Pick Rock, Paper, or Scissors:");

@@ -2,13 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href = "./style.css" rel="stylesheet">
 </head>
+
 <body>
-    <button id = "rock">Rock</button>
-    <button id = "paper">Paper</button>
-    <button id = "scissors">Scissors</button>
-    <script src="javascript.js"></script>
+    <div id = "container" class = "container">
+       <div id = "monitor" class = "main-screen">
+            <div class="game-message-div">
+                <div id="message-log" class = "game-message">Rock Paper Scissors</div> <!-- MESSAGE LOG ELEM -->
+            </div>
+            <div id="game-display" class = "game-display">
+                <div id="human-choice" class = "human-image">  <!-- HUMAN CHOICE IMG -->
+                    <img 
+                        src="./images/hand rock.png"
+                        id="img-humanChoice"
+                    >
+                </div>
+                <div id="computer-choice" class = "computer-image"> <!-- COMPUTER CHOICE IMG -->
+                    <img 
+                        src = "./images/hand-paper.png"
+                        id="img-computerChoice"
+                    >
+                </div>
+            </div>
+            <div id = "scoreboard" class = "scoreboard">
+                <div id = "human-score" class="human-score">
+                    <div id = "player1" class="human-name">YOU</div>
+                    <div id = "humanScoreElem" class="human-points">0</div> <!-- HUMAN SCORE ELEM -->
+                </div>
+                <div id = "computer-score" class="computer-score">
+                    <div id = "player2" class="computer-name">OPPONENT</div>
+                    <div id = "computerScoreElem" class="computer-points">0</div> <!-- COMPUTER SCORE ELEM -->
+                </div>
+            </div>
+        </div>
+        <div class="start-and-buttons">
+            <div class = "start-button">
+                <button id="start-btn">Start</button> <!-- START BTN -->
+            </div>
+            <div id="button-container" class = "image-buttons">
+                <div class = "buttonDiv"> 
+                    <img 
+                        src="./images/hand rock (white).png"
+                        id="btnRock"
+                        class="img-btn" 
+                    > <!-- ^ ONE OF THE BUTTONS -->
+                </div>
+                <div class = "buttonDiv">
+                    <img 
+                        src="./images/hand scissors (white).png"
+                        id="btnScsrs"
+                        class="img-btn"
+                    > <!-- ^ ONE OF THE BUTTONS -->
+                </div>
+                <div class = "buttonDiv">
+                    <img 
+                        src="./images/hand-paper (white).png"
+                        id="btnPaper"
+                        class="img-btn"
+                    > <!-- ^ ONE OF THE BUTTONS -->
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="myscript.js"></script>
+    </script>
 </body>
 </html>
